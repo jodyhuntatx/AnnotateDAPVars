@@ -1,0 +1,4 @@
+- !variable
+  id: DemoVault/CICD/CICD_Secrets/Cloud Service-AWSAccessKeys-ec2_user/password
+  annotations:
+    test: CICD_SecretsAWSAccessKeysCloud Service-AWSAccessKeys-ec2_user

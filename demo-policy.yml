@@ -1,0 +1,14 @@
+---
+- !policy
+  id: carefirst
+  annotations:
+    description: Conjur policy for CareFirst demo
+  body:
+  - !host app
+
+- !grant
+  role: !group DemoVault/CICD/CICD_Secrets/delegation/consumers
+  member: !host carefirst/app
+
+- !delete
+  record: !variable DemoVault/CICD/CICD_Secrets/Cloud\" \"Service-AWSAccessKeys-ec2_user/password
